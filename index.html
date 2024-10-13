@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeteorologiAqui</title>
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icones do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <!-- Fontes do 'Font Awesome' -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="form">
+        <h3>Digite a localização</h3>
+        <div class="custom_input">
+          <i class="fa-solid fa-satellite"></i>
+          <input
+            class="input"
+            id="city-input"
+            type="text"
+            placeholder="insira a cidade"
+          />
+        </div>
+      </div>
+      <div id="weather-data" class="hidden">
+        <h2 class="animate__animated animate__fadeInLeft">
+          <i class="fa-solid fa-location-arrow"></i>
+          <span id="city"></span>
+          <img
+            src=""
+            alt=""
+            id="country"
+            class="animate__animated animate__fadeInLeft"
+          />
+        </h2>
+        <p id="temp" class="animate__animated animate__fadeInLeft">
+          <span class="temp-container">
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            <span id="temp-value">30</span>&deg;C
+          </span>
+        </p>
+        <div id="desc-container" class="animate__animated animate__fadeInLeft">
+          <p id="desc"></p>
+          <img
+            src=""
+            alt="Descrição do tempo"
+            id="desc-icon"
+            class="animate__animated animate__fadeInLeft"
+          />
+        </div>
+        <div id="info-container">
+          <p id="humidity" class="animate__animated animate__fadeInLeft">
+            <i class="bi bi-droplet"></i>
+            <span></span>
+          </p>
+          <p id="wind" class="animate__animated animate__fadeInLeft">
+            <i class="bi bi-wind"></i>
+            <span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+# Node modules (se você estiver usando Node.js)
+node_modules/
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Diretórios de build e saída
+dist/
+build/
+
+# Arquivos de log
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.swp
